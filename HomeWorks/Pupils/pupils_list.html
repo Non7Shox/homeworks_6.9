@@ -1,0 +1,8 @@
+<!-- pupils_list.html fayli -->
+
+<h1>Pupils List</h1>
+<ul>
+{% for pupil in pupils %}
+    <li><a href="{% url 'pupil_detail' pupil.id %}">{{ pupil.name }}</a></li>
+{% endfor %}
+</ul>
